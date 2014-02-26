@@ -10,9 +10,9 @@
 
 url  = 'https://app.asana.com/api/1.0'
 
-workspace = "WORKSPACE_ID"
-project = "PROJECT_ID"
-user = "xxxxx.xxxxxxxxxxxxxxx"
+workspace = process.env.HUBOT_ASANA_WORKSPACE
+project = process.env.HUBOT_ASANA_PROJECT
+user = process.env.HUBOT_ASANA_APIKEY
 pass = ""
 
 getRequest = (msg, path, callback) ->
